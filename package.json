@@ -9,9 +9,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
+    "start": "node api.js && node index.js",
     "compile": "node index.js",
-    "dev": "nodemon --exec npm run start"
+    "dev": "node api.js && nodemon --exec npm run start"
   },
   "repository": {
     "type": "git",
@@ -48,10 +48,7 @@
     "jsonwebtoken": "^9.0.0",
     "mongodb": "^5.5.0",
     "mongoose": "^7.2.2",
-
     "node-fetch": "^3.3.1",
-
     "nodemailer": "^6.9.3"
-
   }
 }
